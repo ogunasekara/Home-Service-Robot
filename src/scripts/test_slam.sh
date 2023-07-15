@@ -2,10 +2,10 @@
 GO_TO_WORKSPACE="cd $(dirname "$0"); "
 ROS_SOURCE_CMD="${GO_TO_WORKSPACE} source /opt/ros/kinetic/setup.bash; source ../../devel/setup.bash; "
 
-terminator -e "${ROS_SOURCE_CMD} roslaunch turtlebot_gazebo turtlebot_world.launch" &
+terminator -e "${ROS_SOURCE_CMD} roslaunch my_robot world.launch" &
 sleep 5
-terminator -e "${ROS_SOURCE_CMD} roslaunch turtlebot_gazebo gmapping_demo.launch" &
+terminator -e "${ROS_SOURCE_CMD} roslaunch my_robot mapping.launch" &
 sleep 5
-terminator -e "${ROS_SOURCE_CMD} roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+terminator -e "${ROS_SOURCE_CMD} roslaunch my_robot world.launch" &
 sleep 5
-terminator -e "${ROS_SOURCE_CMD} roslaunch turtlebot_teleop keyboard_teleop.launch" &
+terminator -e "${ROS_SOURCE_CMD} rosrun teleop_twist_keyboard teleop_twist_keyboard.py" &
