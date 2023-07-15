@@ -1,0 +1,4 @@
+<launch>
+    <!-- Launch rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find my_robot)/../rvizConfig/navigation_new.rviz"/>
+</launch>
