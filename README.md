@@ -27,7 +27,7 @@ The map used for this final project was created with [RTAB-Map](http://wiki.ros.
 
 The final RTAB-Map database file can be downloaded [here](https://drive.google.com/file/d/1TbcifvqDBU_A6sHIB885Yt0Qa8up-NWR/view).
 
-Another method for mapping is [gmapping](http://wiki.ros.org/gmapping). I did not use gmapping for this project as I was able to generate a more better and more optimized map (in regards to loop closures) utilizing RTAB-Map.
+Another method for mapping is [gmapping](http://wiki.ros.org/gmapping). I did not use gmapping for this project as I was able to generate a more accurate and more optimized map (in regards to loop closures) utilizing RTAB-Map.
 
 ## Localization
 
